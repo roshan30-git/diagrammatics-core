@@ -1,39 +1,39 @@
-// Initialize Lucide Icons
-lucide.createIcons();
+document.addEventListener('DOMContentLoaded', () => {
+    // Initialize Lucide icons
+    lucide.createIcons();
 
-// Smooth reveal on scroll for sections
-const observerOptions = {
-    threshold: 0.1,
-    rootMargin: "0px 0px -50px 0px"
-};
-
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.style.opacity = '1';
-            entry.target.style.transform = 'translateY(0)';
-            observer.unobserve(entry.target);
-        }
-    });
-}, observerOptions);
-
-document.querySelectorAll('.section, .hero-visual').forEach(el => {
-    // Initial state
-    el.style.opacity = '0';
-    el.style.transform = 'translateY(20px)';
-    el.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
-    observer.observe(el);
-});
-
-// Window Controls Interaction (Visual only)
-document.querySelectorAll('.win-btn').forEach(btn => {
-    btn.addEventListener('click', (e) => {
-        if (e.target.textContent === '×') {
-            const win = e.target.closest('.window');
-            if (win) {
-                win.style.opacity = '0.5';
-                setTimeout(() => win.style.opacity = '1', 500); // Just a flicker effect
+    // Intersection Observer for scroll animations
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
             }
-        }
+        });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.section').forEach(section => {
+        section.style.opacity = '0';
+        section.style.transform = 'translateY(30px)';
+        section.style.transition = 'all 0.6s ease-out';
+        observer.observe(section);
+    });
+
+    // Documentation Tab Logic
+    const tabButtons = document.querySelectorAll('.doc-tab-btn');
+    const tabPanes = document.querySelectorAll('.tab-pane');
+
+    tabButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const tabId = btn.getAttribute('data-tab');
+            
+            // Remove active classes
+            tabButtons.forEach(b => b.classList.remove('active'));
+            tabPanes.forEach(p => p.classList.remove('active'));
+            
+            // Add active classes
+            btn.classList.add('active');
+            document.getElementById(`tab-${tabId}`).classList.add('active');
+        });
     });
 });
