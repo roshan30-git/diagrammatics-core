@@ -18,7 +18,9 @@
         </div>
         <div class="nav-links">
             <a href="#story">The Story</a>
-            <a href="#features">Engine Specs</a>
+            <a href="#engine">The Engine</a>
+            <a href="#educators">For Educators</a>
+            <a href="#roadmap">Horizon</a>
             <a href="#demo" class="btn-retro btn-accent pulse-btn">BOOK A DEMO</a>
         </div>
     </nav>
@@ -26,9 +28,9 @@
     <!-- Hero Section -->
     <header class="hero">
         <div class="hero-content">
-            <div class="badge-retro">SYSTEM_BETA_V1.0</div>
+            <div class="badge-retro">SYSTEM_BETA_V2.0</div>
             <h1 class="hero-title">Your Brain, <br><span class="text-blue">Decentralized.</span></h1>
-            <p class="hero-subtitle">The unapologetic, local-first academic OS for students and engineers. Turn scattered notes into a structured visual knowledge engine.</p>
+            <p class="hero-subtitle">The unapologetic, local-first academic OS. We are moving beyond the limitations of single-agent chat to orchestrate a team of specialized AI agents that build structured, visual knowledge systems on your hard drive.</p>
             <div class="hero-ctas">
                 <a href="#demo" class="btn-retro btn-primary btn-large">BOOK A LIVE DEMO</a>
                 <a href="#story" class="btn-retro btn-large">READ THE MANIFESTO</a>
@@ -46,21 +48,18 @@
             </div>
             <div class="window-content grid-bg hero-svg-container">
                 <svg viewBox="0 0 400 200" class="hero-svg">
-                    <!-- Central Node -->
                     <circle cx="200" cy="100" r="40" fill="var(--window-bg)" stroke="var(--primary)" stroke-width="4" />
                     <text x="200" y="105" text-anchor="middle" class="svg-text">CORE</text>
                     
-                    <!-- Satellites -->
                     <rect x="40" y="40" width="80" height="30" fill="var(--canvas-light)" stroke="var(--border-color)" stroke-width="2"/>
-                    <text x="80" y="60" text-anchor="middle" class="svg-text-sm">RAG_DB</text>
+                    <text x="80" y="60" text-anchor="middle" class="svg-text-sm">TREE_RAG</text>
                     
                     <rect x="280" y="130" width="80" height="30" fill="var(--canvas-light)" stroke="var(--accent)" stroke-width="2"/>
                     <text x="320" y="150" text-anchor="middle" class="svg-text-sm text-accent">VSE_RENDER</text>
                     
                     <rect x="40" y="130" width="80" height="30" fill="var(--canvas-light)" stroke="var(--amber)" stroke-width="2"/>
-                    <text x="80" y="150" text-anchor="middle" class="svg-text-sm">AGENTS</text>
+                    <text x="80" y="150" text-anchor="middle" class="svg-text-sm">SWARM</text>
 
-                    <!-- Connections -->
                     <line x1="120" y1="55" x2="165" y2="85" stroke="var(--border-color)" stroke-width="2" stroke-dasharray="4"/>
                     <line x1="235" y1="115" x2="280" y2="145" stroke="var(--accent)" stroke-width="2" stroke-dasharray="4"/>
                     <line x1="120" y1="145" x2="165" y2="115" stroke="var(--amber)" stroke-width="2" stroke-dasharray="4"/>
@@ -69,66 +68,110 @@
         </div>
     </header>
 
-    <!-- The Story / Problem Section -->
+    <!-- The Story Section -->
     <section id="story" class="section story-section">
         <div class="section-header">
-            <h2>The Problem With Generic AI</h2>
-            <p class="text-mono text-amber">Why ChatGPT fails the modern engineering student.</p>
+            <h2>The Genesis: Why We Built This</h2>
+            <p class="text-mono text-amber">The failure of generic AI in serious academia.</p>
         </div>
         
-        <div class="story-grid">
-            <div class="window tilt-left">
-                <div class="window-header"><span class="window-title text-accent">Generic AI</span></div>
-                <div class="window-content paper-texture">
-                    <ul class="retro-list list-bad">
-                        <li><strong>Hallucinates Syllabus:</strong> Doesn't know your specific university marking scheme.</li>
-                        <li><strong>Text Only:</strong> Explains circuits in text instead of drawing actual SchemDraw SVGs.</li>
-                        <li><strong>Privacy Leak:</strong> Your assignment data trains global models.</li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="window tilt-right featured-window">
-                <div class="window-header"><span class="window-title text-blue">Diagrammatics Core</span></div>
-                <div class="window-content dark-bg">
-                    <ul class="retro-list list-good">
-                        <li><strong>Syllabus-Aware:</strong> Grounded via local <code>sqlite-vec</code> Tree-RAG.</li>
-                        <li><strong>Visual Synthesis:</strong> Agents write Mermaid, tldraw, and Plotly code natively.</li>
-                        <li><strong>100% Local:</strong> Runs on your machine. Zero telemetry.</li>
-                    </ul>
-                    <div class="stamp-verified">APPROVED</div>
-                </div>
+        <div class="story-narrative window">
+            <div class="window-header"><span class="window-title"><i data-lucide="book-open"></i> C:\DOCS\The_Problem.txt</span></div>
+            <div class="window-content paper-texture">
+                <p><strong>The modern engineering student is drowning in context, but starving for structure.</strong></p>
+                <p>When you ask a generic AI (like ChatGPT) to solve a 7-mark GTU university question, it fails. It hallucinates syllabus bounds, ignores local university marking schemes, and outputs paragraphs of text when what you actually need is a <em>SchemDraw circuit diagram</em> or a <em>Mermaid flowchart</em>.</p>
+                <p>Worse, your intellectual property—your assignments, your research, your late-night derivation attempts—are sent to the cloud to train global models.</p>
+                <h3 class="text-blue mt-4">The Diagrammatics Solution</h3>
+                <p>We built a <strong>Local-First Mainframe</strong>. It doesn't just chat; it orchestrates. Using <code>AgentScope</code>, we deploy a "Swarm" of specialized agents right on your local machine. They hunt for past papers, solve complex multi-part math, and automatically inject high-fidelity SVG diagrams into your workflow. Zero telemetry. Infinite recall.</p>
             </div>
         </div>
     </section>
 
-    <!-- Features Section -->
-    <section id="features" class="section features-section">
+    <!-- The Engine Section -->
+    <section id="engine" class="section features-section">
         <div class="section-header">
-            <h2>Engineering-Grade Specs</h2>
-            <p class="text-mono">Multi-Agent Orchestration under the hood.</p>
+            <h2>The Engine Architecture</h2>
+            <p class="text-mono">Unpacking the AgentScope Swarm.</p>
         </div>
 
         <div class="features-grid">
-            <!-- Feature 1 -->
-            <div class="window feature-card">
-                <div class="feature-icon bg-blue"><i data-lucide="network"></i></div>
-                <h3>Visual Synthesis Engine</h3>
-                <p>A dedicated rendering layer for STEM. Automatically generates SchemDraw circuits, Mermaid flowcharts, and TikZ math directly into your workspace.</p>
-            </div>
-            
-            <!-- Feature 2 -->
             <div class="window feature-card">
                 <div class="feature-icon bg-amber"><i data-lucide="bot"></i></div>
                 <h3>AgentScope Swarm</h3>
-                <p>Not just one AI. A specialized team: <strong>The Scholar</strong> (Theory), <strong>The Architect</strong> (Diagrams), and <strong>The Critic</strong> (IEEE checks).</p>
+                <p>Not one AI, but three: <strong>The Scholar</strong> extracts theory from PDFs, <strong>The Architect</strong> generates diagrams, and <strong>The Critic</strong> verifies against IEEE standards. They debate and solve in parallel.</p>
+            </div>
+            
+            <div class="window feature-card">
+                <div class="feature-icon bg-blue"><i data-lucide="network"></i></div>
+                <h3>Visual Synthesis (VSE)</h3>
+                <p>A dedicated rendering layer. Agents natively write and render <strong>SchemDraw</strong> (Circuits), <strong>Mermaid.js</strong> (Systems), and <strong>Plotly.js</strong> (3D Math) directly into your dashboard.</p>
             </div>
 
-            <!-- Feature 3 -->
             <div class="window feature-card">
                 <div class="feature-icon bg-pink"><i data-lucide="database"></i></div>
-                <h3>Local Tree-RAG</h3>
-                <p>Your entire semester indexed offline. Ask cross-subject questions: "How does Maths III apply to my DSP assignment?"</p>
+                <h3>Tree-RAG Memory</h3>
+                <p>Powered by <code>sqlite-vec</code>. Your entire semester is indexed hierarchically (Semester > Subject > Topic). Ask: <em>"How does the Maths III Fourier Transform apply to this DSP lab?"</em></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Educators Section (College Teachers Level Feature) -->
+    <section id="educators" class="section educators-section dark-bg">
+        <div class="section-header text-center">
+            <h2 class="text-accent">God Mode: For Educators</h2>
+            <p class="text-mono text-canvas-light">College Teachers Level Features</p>
+        </div>
+        
+        <div class="educator-grid">
+            <div class="window">
+                <div class="window-header"><span class="window-title text-accent"><i data-lucide="shield"></i> C:\ADMIN\Educator_Console.exe</span></div>
+                <div class="window-content terminal-bg">
+                    <p class="text-success">> [SYSTEM] Initializing Educator Matrix...</p>
+                    <p class="text-sys">> Module: Automated Rubric Grading [ONLINE]</p>
+                    <p class="text-sys">> Module: Class-wide Weakness Heatmap [ONLINE]</p>
+                    <p class="text-sys">> Module: Syllabus Generator (GTU Standard) [ONLINE]</p>
+                    <p class="text-warn">> Analyzing batch submissions for semantic plagiarism... 100%</p>
+                </div>
+            </div>
+            <div class="educator-text">
+                <h3 class="text-accent">The Ultimate Academic Panopticon</h3>
+                <p>Diagrammatics Core scales from the single student to the lecture hall. For professors and TAs, the engine unlocks "God Mode":</p>
+                <ul class="retro-list list-good">
+                    <li><strong>Batch Rubric Analysis:</strong> Run 100 assignments through the Critic Agent simultaneously to enforce strict marking schemes.</li>
+                    <li><strong>Semantic Plagiarism Detection:</strong> Local vector search identifies conceptual copying, not just copy-paste text matching.</li>
+                    <li><strong>Class Knowledge Heatmaps:</strong> Aggregate your students' RAG queries to see exactly which topics the class is failing to grasp before the midterms.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Roadmap Section -->
+    <section id="roadmap" class="section roadmap-section">
+        <div class="section-header">
+            <h2>The Horizon</h2>
+            <p class="text-mono text-amber">Future Projections & Strategic Roadmap.</p>
+        </div>
+
+        <div class="timeline">
+            <div class="timeline-item window">
+                <div class="window-header"><span class="window-title text-blue">Phase IV: Voice Intelligence</span></div>
+                <div class="window-content grid-bg">
+                    <p><strong>Whisper.cpp Real-time Capture:</strong> Local speech-to-text running continuously during lectures. The Swarm listens, structures the professor's tangents, and automatically generates Mermaid flowcharts of the lecture concept in real-time.</p>
+                </div>
+            </div>
+            
+            <div class="timeline-item window">
+                <div class="window-header"><span class="window-title text-amber">Phase V: Handwriting Synthesis</span></div>
+                <div class="window-content grid-bg">
+                    <p><strong>Analog-to-Digital LaTeX:</strong> Feed smartphone scans of your messy notebook derivations into the engine. Specialized local CNNs convert your scrawled math directly into clean, exportable LaTeX and digital docs.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item window">
+                <div class="window-header"><span class="window-title text-pink">Phase VI: The Nexus Network</span></div>
+                <div class="window-content grid-bg">
+                    <p><strong>Ad-Hoc Mobile Sync & Market:</strong> Access your desktop's Knowledge Graph on your phone via a local network bridge. Plus, a community-driven "Agent Marketplace" to share custom study skills and MCPs (Model Context Protocols) with peers.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -143,29 +186,24 @@
                 </div>
             </div>
             <div class="window-content paper-texture cta-content">
-                <h2>Ready to Upgrade Your Brain?</h2>
-                <p class="subtitle">Book a 1-on-1 demo call to see Diagrammatics Core running locally on your machine.</p>
+                <h2>Claim Your Early Access</h2>
+                <p class="subtitle">Book a 1-on-1 engineering demo. See the Swarm in action.</p>
                 
                 <form class="retro-form" onsubmit="event.preventDefault(); alert('Demo request routed to mainframe!');">
                     <div class="form-group">
-                        <label>Student/Engineer Name</label>
+                        <label>Name / Callsign</label>
                         <input type="text" class="retro-input" placeholder="e.g. Alex M.">
                     </div>
                     <div class="form-group">
-                        <label>University / Company</label>
-                        <input type="text" class="retro-input" placeholder="e.g. GTU">
+                        <label>Institution (University/Company)</label>
+                        <input type="text" class="retro-input" placeholder="e.g. GTU / MIT">
                     </div>
                     <div class="form-group">
-                        <label>Email Transmission</label>
+                        <label>Secure Email</label>
                         <input type="email" class="retro-input" placeholder="alex@university.edu" required>
                     </div>
-                    <button type="submit" class="btn-retro btn-primary btn-massive">SCHEDULE DEMO →</button>
+                    <button type="submit" class="btn-retro btn-primary btn-massive">INITIALIZE SEQUENCE →</button>
                 </form>
-                
-                <div class="terminal-mini mt-4">
-                    <p class="text-success">> ping calendar.api...</p>
-                    <p class="text-success">> system ready to schedule.</p>
-                </div>
             </div>
         </div>
     </section>
@@ -173,12 +211,8 @@
     <!-- Footer -->
     <footer class="retro-footer">
         <div class="footer-content">
-            <div>
-                <i data-lucide="cpu" class="icon-sm"></i> DIAGRAMMATICS CORE v2.0
-            </div>
-            <div>
-                Built for the Local-First Revolution.
-            </div>
+            <div><i data-lucide="cpu" class="icon-sm"></i> DIAGRAMMATICS CORE v2.0</div>
+            <div>Built for the Local-First Revolution.</div>
         </div>
     </footer>
 
