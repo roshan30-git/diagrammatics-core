@@ -6,7 +6,7 @@
     --canvas-dark: #1A1818;
     --window-bg: #FFFFFF;
     --window-dark: #242222;
-    --primary: #3B82F6;
+    --primary: #1E3A8A; /* Darker ink blue for better contrast */
     --accent: #F43F5E;
     --amber: #F59E0B;
     --success: #22C55E;
@@ -146,11 +146,6 @@ body {
     z-index: 10;
 }
 
-/* Simulated Scattering */
-.tilt-left { transform: rotate(-1.5deg); }
-.tilt-right { transform: rotate(1.5deg); }
-.tilt-left:hover { transform: rotate(-1.5deg) translateY(-5px); }
-.tilt-right:hover { transform: rotate(1.5deg) translateY(-5px); }
 .featured-window { grid-column: 1 / -1; }
 
 .window-header {
@@ -420,8 +415,9 @@ p {
     font-size: 1.2rem;
     text-transform: uppercase;
     font-family: var(--font-header);
-    opacity: 0.7;
+    opacity: 0.3;
     pointer-events: none;
+    z-index: 0;
 }
 
 /* Main Dock */
@@ -432,7 +428,6 @@ p {
     transform: translateX(-50%);
     background: var(--window-bg);
     border: var(--border);
-    border-radius: 100px;
     padding: 0.5rem;
     display: flex;
     gap: 0.5rem;
@@ -447,13 +442,13 @@ p {
     font-weight: 700;
     font-size: 0.9rem;
     padding: 0.75rem 1.5rem;
-    border-radius: 100px;
     cursor: pointer;
     display: flex;
     align-items: center;
     gap: 0.5rem;
     transition: all 0.2s;
     text-transform: uppercase;
+    border: 2px solid transparent;
 }
 
 .dock-btn:hover, .dock-btn.active {
