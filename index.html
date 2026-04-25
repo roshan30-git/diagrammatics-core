@@ -87,7 +87,7 @@
         </div>
     </section>
 
-    <!-- The Engine Section -->
+    <!-- The Engine Section (Visual Heavy) -->
     <section id="engine" class="section features-section">
         <div class="section-header">
             <h2>The Engine Architecture</h2>
@@ -95,22 +95,57 @@
         </div>
 
         <div class="features-grid">
+            <!-- Visual Feature 1: Agent Swarm -->
             <div class="window feature-card">
-                <div class="feature-icon bg-amber"><i data-lucide="bot"></i></div>
-                <h3>AgentScope Swarm</h3>
-                <p>Not one AI, but three: <strong>The Scholar</strong> extracts theory from PDFs, <strong>The Architect</strong> generates diagrams, and <strong>The Critic</strong> verifies against IEEE standards. They debate and solve in parallel.</p>
+                <div class="feature-visual bg-amber-light">
+                    <div class="mini-terminal">
+                        <p class="text-sys">> The Scholar: Extracting Fourier equations...</p>
+                        <p class="text-warn">> The Architect: Generating TikZ nodes...</p>
+                        <p class="text-sys">> The Critic: Verifying math constraints. [OK]</p>
+                    </div>
+                </div>
+                <div class="feature-content">
+                    <h3>AgentScope Swarm</h3>
+                    <p>Not one AI, but three specialized agents: <strong>The Scholar</strong>, <strong>The Architect</strong>, and <strong>The Critic</strong>. They debate and solve in parallel.</p>
+                </div>
             </div>
             
+            <!-- Visual Feature 2: VSE -->
             <div class="window feature-card">
-                <div class="feature-icon bg-blue"><i data-lucide="network"></i></div>
-                <h3>Visual Synthesis (VSE)</h3>
-                <p>A dedicated rendering layer. Agents natively write and render <strong>SchemDraw</strong> (Circuits), <strong>Mermaid.js</strong> (Systems), and <strong>Plotly.js</strong> (3D Math) directly into your dashboard.</p>
+                <div class="feature-visual bg-blue-light">
+                    <svg viewBox="0 0 200 100" class="feature-svg">
+                        <!-- Simulated tscircuit / flow -->
+                        <rect x="20" y="30" width="40" height="40" rx="5" fill="var(--window-bg)" stroke="var(--primary)" stroke-width="2"/>
+                        <circle cx="100" cy="50" r="20" fill="var(--canvas-light)" stroke="var(--primary)" stroke-width="2"/>
+                        <polygon points="150,30 180,50 150,70" fill="var(--primary)"/>
+                        <line x1="60" y1="50" x2="80" y2="50" stroke="var(--primary)" stroke-width="2"/>
+                        <line x1="120" y1="50" x2="150" y2="50" stroke="var(--primary)" stroke-width="2"/>
+                    </svg>
+                </div>
+                <div class="feature-content">
+                    <h3>Visual Synthesis (VSE)</h3>
+                    <p>Agents natively write and render <strong>SchemDraw</strong> circuits, <strong>Mermaid.js</strong> systems, and <strong>Plotly.js</strong> graphs directly into your dashboard.</p>
+                </div>
             </div>
 
+            <!-- Visual Feature 3: Tree-RAG -->
             <div class="window feature-card">
-                <div class="feature-icon bg-pink"><i data-lucide="database"></i></div>
-                <h3>Tree-RAG Memory</h3>
-                <p>Powered by <code>sqlite-vec</code>. Your entire semester is indexed hierarchically (Semester > Subject > Topic). Ask: <em>"How does the Maths III Fourier Transform apply to this DSP lab?"</em></p>
+                <div class="feature-visual bg-pink-light">
+                    <svg viewBox="0 0 200 100" class="feature-svg">
+                        <!-- Tree Structure -->
+                        <rect x="80" y="10" width="40" height="20" fill="var(--window-bg)" stroke="var(--accent)" stroke-width="2"/>
+                        <!-- Branches -->
+                        <path d="M100 30 L100 40 L50 40 L50 60" fill="none" stroke="var(--accent)" stroke-width="2"/>
+                        <path d="M100 30 L100 40 L150 40 L150 60" fill="none" stroke="var(--accent)" stroke-width="2"/>
+                        <!-- Leaves -->
+                        <circle cx="50" cy="70" r="10" fill="var(--accent)"/>
+                        <circle cx="150" cy="70" r="10" fill="var(--accent)"/>
+                    </svg>
+                </div>
+                <div class="feature-content">
+                    <h3>Tree-RAG Memory</h3>
+                    <p>Powered by <code>sqlite-vec</code>. Your entire semester is indexed hierarchically (Semester > Subject > Topic) for pinpoint local recall.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -155,21 +190,21 @@
         <div class="timeline">
             <div class="timeline-item window">
                 <div class="window-header"><span class="window-title text-blue">Phase IV: Voice Intelligence</span></div>
-                <div class="window-content grid-bg">
+                <div class="window-content paper-texture">
                     <p><strong>Whisper.cpp Real-time Capture:</strong> Local speech-to-text running continuously during lectures. The Swarm listens, structures the professor's tangents, and automatically generates Mermaid flowcharts of the lecture concept in real-time.</p>
                 </div>
             </div>
             
             <div class="timeline-item window">
                 <div class="window-header"><span class="window-title text-amber">Phase V: Handwriting Synthesis</span></div>
-                <div class="window-content grid-bg">
+                <div class="window-content paper-texture">
                     <p><strong>Analog-to-Digital LaTeX:</strong> Feed smartphone scans of your messy notebook derivations into the engine. Specialized local CNNs convert your scrawled math directly into clean, exportable LaTeX and digital docs.</p>
                 </div>
             </div>
 
             <div class="timeline-item window">
                 <div class="window-header"><span class="window-title text-pink">Phase VI: The Nexus Network</span></div>
-                <div class="window-content grid-bg">
+                <div class="window-content paper-texture">
                     <p><strong>Ad-Hoc Mobile Sync & Market:</strong> Access your desktop's Knowledge Graph on your phone via a local network bridge. Plus, a community-driven "Agent Marketplace" to share custom study skills and MCPs (Model Context Protocols) with peers.</p>
                 </div>
             </div>
@@ -185,25 +220,13 @@
                     <button class="win-btn">_</button><button class="win-btn">□</button><button class="win-btn">×</button>
                 </div>
             </div>
-            <div class="window-content paper-texture cta-content">
+            <div class="window-content paper-texture cta-content text-center">
                 <h2>Claim Your Early Access</h2>
-                <p class="subtitle">Book a 1-on-1 engineering demo. See the Swarm in action.</p>
+                <p class="subtitle" style="margin-bottom: 2rem;">Book a 1-on-1 engineering demo. See the Swarm in action.</p>
                 
-                <form class="retro-form" onsubmit="event.preventDefault(); alert('Demo request routed to mainframe!');">
-                    <div class="form-group">
-                        <label>Name / Callsign</label>
-                        <input type="text" class="retro-input" placeholder="e.g. Alex M.">
-                    </div>
-                    <div class="form-group">
-                        <label>Institution (University/Company)</label>
-                        <input type="text" class="retro-input" placeholder="e.g. GTU / MIT">
-                    </div>
-                    <div class="form-group">
-                        <label>Secure Email</label>
-                        <input type="email" class="retro-input" placeholder="alex@university.edu" required>
-                    </div>
-                    <button type="submit" class="btn-retro btn-primary btn-massive">INITIALIZE SEQUENCE →</button>
-                </form>
+                <a href="https://forms.gle/mRfH5CpkPANwMFvM6" target="_blank" rel="noopener noreferrer" class="btn-retro btn-primary btn-massive pulse-btn" style="text-decoration: none;">
+                    OPEN BOOKING PORTAL →
+                </a>
             </div>
         </div>
     </section>
