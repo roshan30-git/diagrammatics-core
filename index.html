@@ -5,155 +5,216 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diagrammatics Core | Retro OS Scholar Edition</title>
     <meta name="description" content="A local-first knowledge and reasoning engine. The Digital Scholar's Attic.">
-    
-    <!-- Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
-    
-    <!-- Styles -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-    <!-- Desktop Icons -->
-    <div class="desktop-icon" style="top: 40px; left: 40px;">
-        <i data-lucide="user"></i>
-        <span>Profile</span>
-    </div>
-    <div class="desktop-icon" style="top: 140px; left: 40px;">
-        <i data-lucide="folder"></i>
-        <span>Works</span>
-    </div>
-    <div class="desktop-icon" style="top: 40px; right: 40px;">
-        <i data-lucide="mail"></i>
-        <span>Contact</span>
-    </div>
-    <div class="desktop-icon" style="top: 140px; right: 40px;">
-        <i data-lucide="file-text"></i>
-        <span>Resume</span>
-    </div>
 
-    <!-- Main Window: Core Philosophy -->
-    <div id="window-core" class="window">
-        <div class="window-header">
-            <div class="window-title">
-                <i data-lucide="brain"></i>
-                C:\DIAGRAMMATICS\core.exe
-            </div>
-            <div class="window-controls">
-                <div class="control">⠿</div>
-                <div class="control control-close">×</div>
-            </div>
+    <!-- Top Status Bar -->
+    <div class="os-status-bar">
+        <div class="status-left">
+            <i data-lucide="cpu" class="icon-sm"></i> SYSTEM CORE ACTIVE
         </div>
-        <div class="window-body">
-            <h1 class="text-blue">Diagrammatics Core</h1>
-            <p style="margin: 1rem 0; font-weight: 600;">The Digital Scholar's Attic</p>
-            <p style="margin-bottom: 1.5rem;">A local-first mainframe for academic intelligence. We prioritize complex multi-agent orchestration over simple chat interfaces.</p>
-            
-            <div style="background: var(--canvas-light); padding: 1rem; border: 2px solid var(--border-color); margin-bottom: 1.5rem;">
-                <h3 style="font-size: 0.8rem; margin-bottom: 0.5rem;">// CORE VISION</h3>
-                <ul style="font-size: 0.875rem; padding-left: 1.25rem;">
-                    <li>Hierarchical RAG (Semester > Subject > Topic)</li>
-                    <li>Agent Collaboration via structured messaging</li>
-                    <li>Zero-Hallucination Grounded Answers</li>
-                </ul>
-            </div>
-
-            <button class="btn-retro btn-primary">Initialize Engine</button>
+        <div class="status-center">
+            DIAGRAMMATICS OS v2.0
+        </div>
+        <div class="status-right" id="clock">
+            10:42 AM
         </div>
     </div>
 
-    <!-- Window: Visual Synthesis -->
-    <div id="window-visuals" class="window">
-        <div class="window-header">
-            <div class="window-title">
-                <i data-lucide="component"></i>
-                C:\VISUALS\synthesis_engine
+    <!-- Desktop Environment -->
+    <div class="desktop">
+        
+        <!-- Sidebar Icons -->
+        <div class="icon-dock-left">
+            <div class="desktop-icon">
+                <i data-lucide="hard-drive"></i>
+                <span>C:Drive</span>
             </div>
-            <div class="window-controls">
-                <div class="control">⠿</div>
-                <div class="control control-close">×</div>
+            <div class="desktop-icon">
+                <i data-lucide="folder-git-2"></i>
+                <span>Works</span>
             </div>
-        </div>
-        <div class="window-body">
-            <h2 class="text-pink">Visual Synthesis Engine</h2>
-            <p style="margin: 0.5rem 0; font-size: 0.875rem;">Directly rendering STEM visuals via AgentScope.</p>
-            
-            <div class="render-preview" style="height: 200px; border: 3px solid var(--border-color); margin: 1rem 0; background: white; position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center;">
-                <div class="stamp" style="top: 10px; right: 10px;">VERIFIED</div>
-                <!-- Simulated Diagram -->
-                <svg width="300" height="150" viewBox="0 0 300 150">
-                    <rect x="20" y="50" width="80" height="50" fill="none" stroke="black" stroke-width="2" />
-                    <text x="60" y="80" text-anchor="middle" font-family="monospace" font-size="10">KNOWLEDGE</text>
-                    <line x1="100" y1="75" x2="160" y2="75" stroke="black" stroke-width="2" stroke-dasharray="4" />
-                    <circle cx="200" cy="75" r="40" fill="none" stroke="#3B82F6" stroke-width="3" />
-                    <text x="200" y="80" text-anchor="middle" font-family="monospace" font-size="10" fill="#3B82F6">REASONING</text>
-                </svg>
+            <div class="desktop-icon">
+                <i data-lucide="file-text"></i>
+                <span>Manifesto</span>
             </div>
-            
-            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
-                <span class="btn-retro" style="font-size: 0.7rem; padding: 0.4rem 0.8rem;">MERMAID.JS</span>
-                <span class="btn-retro" style="font-size: 0.7rem; padding: 0.4rem 0.8rem;">TLDRAW</span>
-                <span class="btn-retro" style="font-size: 0.7rem; padding: 0.4rem 0.8rem;">PLOTLY.JS</span>
+            <div class="desktop-icon">
+                <i data-lucide="terminal-square"></i>
+                <span>Terminal</span>
             </div>
         </div>
+
+        <!-- Main Workspace Grid -->
+        <main class="workspace-grid">
+
+            <!-- Window 1: Executive Summary -->
+            <article class="window tilt-right">
+                <header class="window-header">
+                    <span class="window-title"><i data-lucide="file-text" class="icon-sm"></i> C:\DOCS\Executive_Summary.txt</span>
+                    <div class="window-controls">
+                        <button class="win-btn">_</button>
+                        <button class="win-btn">□</button>
+                        <button class="win-btn close-btn">×</button>
+                    </div>
+                </header>
+                <div class="window-content paper-texture">
+                    <h1>Diagrammatics Core</h1>
+                    <p class="subtitle">The Agent-Driven Academic OS</p>
+                    <p>A premium, locally-hosted academic command center. It moves beyond the limitations of single-agent chat by leveraging the <strong>AgentScope</strong> framework to orchestrate a team of specialized AI agents.</p>
+                    <ul class="retro-list">
+                        <li><strong>Specialized Roles:</strong> Distinct agents for Solving, Hunting, Mentoring, and Memory.</li>
+                        <li><strong>Dual-Interface:</strong> CLI Shell for power users + Glassmorphic Web UI.</li>
+                        <li><strong>Tree-RAG Memory:</strong> Context indexed by Semester > Subject > Topic via <code>sqlite-vec</code>.</li>
+                    </ul>
+                    <div class="stamp-verified">CONFIDENTIAL</div>
+                </div>
+            </article>
+
+            <!-- Window 2: Technical Architecture -->
+            <article class="window tilt-left">
+                <header class="window-header">
+                    <span class="window-title"><i data-lucide="database" class="icon-sm"></i> C:\SYSTEM\Architecture.sys</span>
+                    <div class="window-controls">
+                        <button class="win-btn">_</button>
+                        <button class="win-btn">□</button>
+                        <button class="win-btn close-btn">×</button>
+                    </div>
+                </header>
+                <div class="window-content dark-bg">
+                    <h2 class="text-amber">2026 Stack Architecture</h2>
+                    <table class="retro-table">
+                        <thead>
+                            <tr>
+                                <th>Layer</th>
+                                <th>Technology</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Orchestration</td>
+                                <td>AgentScope (Python)</td>
+                            </tr>
+                            <tr>
+                                <td>API Bridge</td>
+                                <td>FastAPI (Async WS)</td>
+                            </tr>
+                            <tr>
+                                <td>Memory DB</td>
+                                <td>sqlite-vec (Pure C)</td>
+                            </tr>
+                            <tr>
+                                <td>Extraction</td>
+                                <td>PaddleOCR + Scrapling</td>
+                            </tr>
+                            <tr>
+                                <td>Web UI</td>
+                                <td>Next.js 15 + Tailwind</td>
+                            </tr>
+                            <tr>
+                                <td>Visuals</td>
+                                <td>tldraw, Plotly, Mermaid</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </article>
+
+            <!-- Window 3: Visual Synthesis Engine -->
+            <article class="window featured-window">
+                <header class="window-header">
+                    <span class="window-title"><i data-lucide="monitor" class="icon-sm"></i> C:\MODULES\Visual_Synthesis.exe</span>
+                    <div class="window-controls">
+                        <button class="win-btn">_</button>
+                        <button class="win-btn">□</button>
+                        <button class="win-btn close-btn">×</button>
+                    </div>
+                </header>
+                <div class="window-content grid-bg">
+                    <h2 class="text-blue">Visual Synthesis Engine (VSE)</h2>
+                    <p>Automated generation of interactive visuals for STEM questions. Agents coordinate with rendering libraries to inject high-fidelity graphics directly into the output stream.</p>
+                    
+                    <div class="diagram-container">
+                        <svg viewBox="0 0 400 150" class="retro-diagram">
+                            <!-- Diagram Elements -->
+                            <rect x="50" y="50" width="100" height="50" class="diag-box" />
+                            <text x="100" y="80" class="diag-text">QUERY</text>
+                            
+                            <path d="M 150 75 L 250 75" class="diag-arrow" />
+                            <polygon points="250,75 240,70 240,80" class="diag-arrow-head" />
+                            
+                            <rect x="250" y="50" width="100" height="50" class="diag-box accent-box" />
+                            <text x="300" y="80" class="diag-text accent-text">AGENT SWARM</text>
+                        </svg>
+                    </div>
+
+                    <div class="tag-row">
+                        <span class="retro-tag blue">Mermaid.js</span>
+                        <span class="retro-tag amber">tldraw</span>
+                        <span class="retro-tag pink">Plotly.js</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Window 4: The Agent Swarm Terminal -->
+            <article class="window tilt-left">
+                <header class="window-header">
+                    <span class="window-title"><i data-lucide="terminal" class="icon-sm"></i> C:\PROCESSES\Swarm_Terminal.cmd</span>
+                    <div class="window-controls">
+                        <button class="win-btn">_</button>
+                        <button class="win-btn">□</button>
+                        <button class="win-btn close-btn">×</button>
+                    </div>
+                </header>
+                <div class="window-content terminal-bg">
+                    <div id="terminal-output" class="terminal-text">
+                        <!-- JS injected logs -->
+                    </div>
+                </div>
+            </article>
+
+            <!-- Window 5: GTU Intelligence & Paper Hunter -->
+            <article class="window tilt-right">
+                <header class="window-header">
+                    <span class="window-title"><i data-lucide="book-open" class="icon-sm"></i> C:\MODULES\GTU_Intelligence.exe</span>
+                    <div class="window-controls">
+                        <button class="win-btn">_</button>
+                        <button class="win-btn">□</button>
+                        <button class="win-btn close-btn">×</button>
+                    </div>
+                </header>
+                <div class="window-content paper-texture">
+                    <h2>GTU Paper Hunter</h2>
+                    <p>Background automation utilizing <strong>Scrapling Agent</strong> to fetch the last 10 years of GTU papers and syllabus updates undetected.</p>
+                    
+                    <div class="stats-panel">
+                        <div class="stat-box">
+                            <span class="stat-num text-amber">10+</span>
+                            <span class="stat-label">Years PYQs</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-num text-blue">100%</span>
+                            <span class="stat-label">Local Memory</span>
+                        </div>
+                    </div>
+
+                    <h3>Mock Exam Simulation</h3>
+                    <p>Agents analyze past paper patterns to generate timed mock exams mimicking the official university layout.</p>
+                </div>
+            </article>
+
+        </main>
+
     </div>
 
-    <!-- Window: Agent Logs -->
-    <div id="window-logs" class="window">
-        <div class="window-header">
-            <div class="window-title">
-                <i data-lucide="terminal"></i>
-                C:\SYSTEM\agent_swarm.log
-            </div>
-            <div class="window-controls">
-                <div class="control">⠿</div>
-                <div class="control control-close">×</div>
-            </div>
-        </div>
-        <div class="window-body" style="background: #000; padding: 1rem;">
-            <div class="logs-container">
-                <div class="log-line">> [HUNTER] Indexing 2024 Exam Patterns...</div>
-                <div class="log-line">> [SCHOLAR] Extracting logic from PDF...</div>
-                <div class="log-line" style="color: var(--amber)">> [ARCHITECT] Synthesizing circuit diagram...</div>
-                <div class="log-line" style="color: #fff">> [SYSTEM] All agents synchronized.</div>
-                <div class="log-line">> _</div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Window: Stats -->
-    <div id="window-stats" class="window">
-        <div class="window-header">
-            <div class="window-title">
-                <i data-lucide="bar-chart"></i>
-                C:\STUDY\heatmap.sys
-            </div>
-            <div class="window-controls">
-                <div class="control">⠿</div>
-                <div class="control control-close">×</div>
-            </div>
-        </div>
-        <div class="window-body">
-            <h3>Knowledge Mastery</h3>
-            <div class="heatmap">
-                <!-- JavaScript will fill this -->
-            </div>
-            <div style="margin-top: 1rem; display: flex; justify-content: space-between; font-size: 0.75rem; font-family: var(--font-mono);">
-                <span>XP GAINED: 4,209</span>
-                <span class="text-pink">LEVEL: 14</span>
-            </div>
-        </div>
-    </div>
-
-    <!-- Dock -->
-    <div class="dock-container">
-        <div class="dock">
-            <div class="dock-item" title="Search"><i data-lucide="search"></i></div>
-            <div class="dock-item" title="Network"><i data-lucide="share-2"></i></div>
-            <div class="dock-item" title="Settings"><i data-lucide="settings"></i></div>
-            <div class="dock-item" style="background: var(--accent); color: white;" title="New Project"><i data-lucide="plus"></i></div>
-        </div>
-    </div>
+    <!-- Main Navigation Dock -->
+    <nav class="main-dock">
+        <button class="dock-btn active"><i data-lucide="home"></i> Home</button>
+        <button class="dock-btn"><i data-lucide="network"></i> Graph</button>
+        <button class="dock-btn"><i data-lucide="bot"></i> Agents</button>
+        <button class="dock-btn cta-btn"><i data-lucide="zap"></i> Initialize</button>
+    </nav>
 
     <script src="main.js"></script>
 </body>
