@@ -85,17 +85,20 @@
                         <button class="doc-tab-btn active" data-tab="arch">The 2026 Stack</button>
                         <button class="doc-tab-btn" data-tab="swarm">Agent Swarm</button>
                         <button class="doc-tab-btn" data-tab="rag">Tree-RAG Memory</button>
+                        <button class="doc-tab-btn" data-tab="notes">Note Engine</button>
                     </div>
                     <div class="sidebar-group">
-                        <label>Features</label>
+                        <label>Features & Integrations</label>
                         <button class="doc-tab-btn" data-tab="vse">Visual Synthesis</button>
                         <button class="doc-tab-btn" data-tab="gtu">GTU Hunter</button>
+                        <button class="doc-tab-btn" data-tab="notebooklm">NotebookLM MCP</button>
                         <button class="doc-tab-btn" data-tab="export">Academic Export</button>
+                        <button class="doc-tab-btn" data-tab="mcp">Custom Plugins</button>
                     </div>
                 </aside>
                 
                 <!-- Content Pane -->
-                <main class="doc-content paper-texture">
+                <main class="doc-content">
                     <div id="tab-arch" class="tab-pane active">
                         <h3>The 2026 Stack (Successor-First)</h3>
                         <p>Diagrammatics Core eliminates legacy bloat. We favor a <strong>High-Performance Python + Next.js</strong> bridge, optimized for local inference on consumer hardware.</p>
@@ -134,6 +137,14 @@
                         </div>
                         <p>This allows the AI to understand that a question about "Fourier Transforms" in a DSP session should prioritize your DSP class notes over a generic calculus summary.</p>
                     </div>
+                    <div id="tab-notes" class="tab-pane">
+                        <h3>Integrated Note Saving</h3>
+                        <p>A completely local Zettelkasten note-taking system. No need for external apps like Obsidian or Notion. Your notes are saved locally, auto-tagged by the Swarm, and instantly injected into the Tree-RAG memory.</p>
+                        <ul class="retro-list list-good">
+                            <li>Bilingual OCR (English & Local Scripts).</li>
+                            <li>Press a hotkey to instantly capture screen clips into your notes.</li>
+                        </ul>
+                    </div>
                     <div id="tab-vse" class="tab-pane">
                         <h3>Visual Synthesis Engine (VSE)</h3>
                         <p>Diagrammatics agents don't just "talk"—they <strong>build</strong>. The VSE allows agents to natively generate:</p>
@@ -141,8 +152,30 @@
                             <li><strong>Mermaid.js:</strong> For flowcharts and system diagrams.</li>
                             <li><strong>tldraw:</strong> For infinite whiteboard sketches.</li>
                             <li><strong>Plotly.js:</strong> For 3D math and scientific surfaces.</li>
-                            <li><strong>KaTeX:</strong> For pixel-perfect mathematical typography.</li>
+                            <li><strong>SchemDraw:</strong> Auto-generate complex electrical circuits.</li>
+                            <li><strong>Presentation Mode:</strong> Auto-compile visual outputs into ready-to-present PPT slides.</li>
                         </ul>
+                    </div>
+                    <div id="tab-gtu" class="tab-pane">
+                        <h3>GTU Hunter (Scrapling Sidecar)</h3>
+                        <p>A specialized background process using Python's <code>Scrapling</code> library. It automatically penetrates university portals and indexes up to 10 years of PYQs (Previous Year Questions) directly into your local database.</p>
+                        <p>The Swarm uses this indexed data to generate highly accurate Mock Exams based on historical professor patterns.</p>
+                    </div>
+                    <div id="tab-notebooklm" class="tab-pane">
+                        <h3>NotebookLM Connect</h3>
+                        <p>Seamlessly integrate with Google's NotebookLM via MCP (Model Context Protocol). Sync your local folders directly to NotebookLM to generate highly grounded Audio Overviews and podcasts of your lectures, without manually uploading PDFs every time.</p>
+                    </div>
+                    <div id="tab-export" class="tab-pane">
+                        <h3>Pro Academic Export</h3>
+                        <p>When the assignment is solved, you need to submit it. Our export engine uses Tauri headless WebViews to render your glassmorphic UI directly into <strong>Pixel-Perfect PDFs</strong>.</p>
+                        <ul class="retro-list list-good">
+                            <li>Preserves KaTeX equations and advanced symbols.</li>
+                            <li>Outputs strict markdown for GitHub/blog posting.</li>
+                        </ul>
+                    </div>
+                    <div id="tab-mcp" class="tab-pane">
+                        <h3>Custom Plugins & Skills (Future)</h3>
+                        <p>The "Nexus Network" will introduce a community-driven Agent Marketplace. Since we rely on the open Model Context Protocol (MCP), users can write their own Python skills (e.g., "Auto-CAD Plugin", "MATLAB interface") and share them with other engineering students.</p>
                     </div>
                 </main>
             </div>
