@@ -112,28 +112,82 @@
     <section id="outputs" class="section">
         <div class="section-header">
             <h2>Visual Output Showcase</h2>
-            <p class="text-mono">What the engine actually generates.</p>
+            <p class="text-mono">Pre-engineered layout tokens designed to optimize cognitive visual retention.</p>
         </div>
         <div class="features-grid">
+            <!-- Formula Card -->
             <div class="window feature-card">
-                <div class="window-header"><span class="window-title">FormulaCardGrid.tsx</span></div>
+                <div class="window-header"><span class="window-title">FormulaCard.tsx</span></div>
                 <div class="feature-content bg-blue-light">
                     <h3>Formula Cards</h3>
-                    <p>Strict KaTeX-rendered mathematical logic chunks designed for quick cognitive parsing, eliminating walls of text during derivation.</p>
+                    <p>Strict KaTeX-rendered mathematical chunks designed for quick cognitive parsing, eliminating walls of text during derivation.</p>
+                    
+                    <div class="mock-card">
+                        <div class="mock-header">
+                            <span>[FORMULA CARD: DSP_04]</span>
+                            <span class="text-blue">ACTIVE</span>
+                        </div>
+                        <div class="mock-formula">
+                            X(e<sup>jω</sup>) = ∑ x[n] e<sup>-jωn</sup>
+                        </div>
+                        <p class="text-mono" style="font-size: 0.75rem; text-align: center; color: var(--primary);">Discrete-Time Fourier Transform (DTFT)</p>
+                    </div>
                 </div>
             </div>
-            <div class="window feature-card">
-                <div class="window-header"><span class="window-title">MermaidDiagram.tsx</span></div>
-                <div class="feature-content bg-pink-light">
-                    <h3>Mermaid Flowcharts</h3>
-                    <p>Auto-generated state machines, class diagrams, and process workflows visually synthesized from your lecture notes in real-time.</p>
-                </div>
-            </div>
+
+            <!-- Comparison Card -->
             <div class="window feature-card">
                 <div class="window-header"><span class="window-title">ComparisonCard.tsx</span></div>
                 <div class="feature-content bg-amber-light">
                     <h3>Comparison Grids</h3>
-                    <p>The definitive way to understand differentiating technical concepts. Side-by-side metric comparisons replacing lengthy paragraphs.</p>
+                    <p>The definitive way to master distinct technical definitions. Fast side-by-side metric processing replacing long paragraphs.</p>
+                    
+                    <div class="mock-card">
+                        <div class="mock-header">
+                            <span>[COMPARISON: DFT vs DTFT]</span>
+                        </div>
+                        <table class="mock-table">
+                            <thead>
+                                <tr>
+                                    <th>Metric</th>
+                                    <th>DFT</th>
+                                    <th>DTFT</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Frequency</strong></td>
+                                    <td>Discrete</td>
+                                    <td>Continuous</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Domain</strong></td>
+                                    <td>Finite</td>
+                                    <td>Infinite</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Recall Card -->
+            <div class="window feature-card">
+                <div class="window-header"><span class="window-title">QuickRecallCard.tsx</span></div>
+                <div class="feature-content bg-pink-light">
+                    <h3>Quick Recall Cards</h3>
+                    <p>Active retrieval cards leveraging the Generation Effect to lock in definitions before the memory decay curve begins.</p>
+                    
+                    <div class="mock-card">
+                        <div class="mock-header">
+                            <span>[RECALL CARD: NYQUIST]</span>
+                        </div>
+                        <p style="margin-bottom: 0.5rem; font-weight: 700;">What is the minimum sampling rate required to avoid aliasing?</p>
+                        <button class="mock-btn" onclick="document.getElementById('recall-answer').classList.toggle('visible')">Show Answer</button>
+                        <div id="recall-answer" class="mock-answer">
+                            fs ≥ 2 * fmax
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -192,34 +246,42 @@
                 <!-- Content Pane -->
                 <main class="doc-content">
                     <div id="tab-ai_rules" class="tab-pane active">
+                        <span class="classified-badge tier-1">Classified: Tier 1 Authority</span>
                         <h3>AI_RULES.md</h3>
                         <p>Governance root — authority hierarchy, forbidden patterns, and strict rules for AI coding agents. Read this before attempting any implementation.</p>
                     </div>
                     <div id="tab-mvp_spec" class="tab-pane">
+                        <span class="classified-badge tier-1">Classified: Tier 1 Authority</span>
                         <h3>MVP_SPEC.md</h3>
                         <p>The single source of truth for the MVP scope. Defines exactly what features, flows, and agents are included in the initial release (v1.0).</p>
                     </div>
                     <div id="tab-architecture" class="tab-pane">
+                        <span class="classified-badge tier-1">Classified: Tier 1 Authority</span>
                         <h3>ARCHITECTURE.md</h3>
                         <p>System topology, RAG pipeline flow, and exact folder structure. Defines the boundary between the AgentScope Python Hub and the Next.js Frontend.</p>
                     </div>
                     <div id="tab-api_contract" class="tab-pane">
+                        <span class="classified-badge tier-1">Classified: Tier 1 Authority</span>
                         <h3>API_CONTRACT.md</h3>
                         <p>All WebSocket payload schemas, REST API endpoints, and real-time streaming protocols between the Hub and Dashboard.</p>
                     </div>
                     <div id="tab-tech_stack" class="tab-pane">
+                        <span class="classified-badge tier-2">Classified: Tier 2 Integration</span>
                         <h3>TECH_STACK.md</h3>
                         <p>Technology boundaries. FastEmbed, sqlite-vec, Next.js 15, and AgentScope integration specifics.</p>
                     </div>
                     <div id="tab-open_source" class="tab-pane">
+                        <span class="classified-badge tier-2">Classified: Tier 2 Integration</span>
                         <h3>OPEN_SOURCE_STACK.md</h3>
                         <p>Per-library integration notes, why they were chosen, known risks, and fallback alternatives (e.g., PyMuPDF vs pdfplumber).</p>
                     </div>
                     <div id="tab-design_system" class="tab-pane">
+                        <span class="classified-badge tier-2">Classified: Tier 2 Integration</span>
                         <h3>DESIGN_SYSTEM.md</h3>
                         <p>Design tokens, glassmorphism logic, Tailwind classes, and the cognitive-load laws (e.g., Max-4-Chunks, Generation Effect) driving component architecture.</p>
                     </div>
                     <div id="tab-roadmap" class="tab-pane">
+                        <span class="classified-badge tier-3">Classified: Tier 3 Reference</span>
                         <h3>ROADMAP.md</h3>
                         <p>Strict versioning boundaries separating active MVP deliverables from v1.5, v2, and future scoped features.</p>
                     </div>
