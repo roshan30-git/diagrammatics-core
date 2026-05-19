@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diagrammatics Core | Documentation & Landing</title>
-    <meta name="description" content="The local-first academic OS. Technical documentation, deep-dives, and product roadmap.">
+    <meta name="description" content="Visual-first AI education operating system with persistent academic memory and grounded retrieval.">
     <script src="https://unpkg.com/lucide@latest"></script>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -17,62 +17,152 @@
             <span>DIAGRAMMATICS // CORE</span>
         </div>
         <div class="nav-links">
-            <a href="#story">Story</a>
-            <a href="#elite">Features</a>
+            <a href="#features">Features</a>
+            <a href="#notebooklm">NotebookLM</a>
             <a href="#docs">Documentation</a>
+            <a href="#roadmap">MVP / Roadmap</a>
             <a href="#blog">Archive</a>
-            <a href="https://forms.gle/mRfH5CpkPANwMFvM6" target="_blank" class="btn-retro">BOOK DEMO</a>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <header class="hero">
         <div class="hero-content">
-            <div class="badge-retro">SYSTEM_BETA_V2.5</div>
-            <h1 class="hero-title">Your Brain, <br><span class="text-blue">Decentralized.</span></h1>
-            <p class="hero-subtitle">The local-first academic OS. Orchestrating specialized agent swarms to solve, hunt, and visualize university intelligence. 100% private, 100% powerful.</p>
+            <div class="badge-retro">SYSTEM_MVP_V1.0</div>
+            <h1 class="hero-title">VISUAL-FIRST <br><span class="text-blue">EDUCATION OS.</span></h1>
+            <p class="hero-subtitle">Understand, don’t just chat. Persistent academic memory, grounded retrieval, and AI-native study workflows tailored for engineering students.</p>
             <div class="hero-ctas">
-                <a href="https://forms.gle/mRfH5CpkPANwMFvM6" target="_blank" class="btn-retro btn-primary btn-large">BOOK A LIVE DEMO</a>
-                <a href="#docs" class="btn-retro btn-large">READ DOCUMENTATION</a>
+                <a href="#docs" class="btn-retro btn-primary btn-large">READ DOCUMENTATION</a>
+                <a href="#features" class="btn-retro btn-large">VIEW FEATURES</a>
             </div>
         </div>
         
-        <!-- Big Hero Visual -->
+        <!-- Big Hero Visual (Architecture Window) -->
         <div class="hero-visual window">
             <div class="window-header">
-                <span class="window-title"><i data-lucide="activity"></i> C:\ENGINE\visualizer.exe</span>
+                <span class="window-title"><i data-lucide="activity"></i> C:\ENGINE\pipeline.exe</span>
                 <div class="window-controls">
                     <button class="win-btn">_</button><button class="win-btn">□</button><button class="win-btn">×</button>
                 </div>
             </div>
-            <div class="window-content grid-bg hero-svg-container">
-                <svg viewBox="0 0 400 200" class="hero-svg">
-                    <circle cx="200" cy="100" r="40" fill="var(--window-bg)" stroke="var(--primary)" stroke-width="4" />
-                    <text x="200" y="105" text-anchor="middle" class="svg-text">CORE</text>
-                    <rect x="40" y="40" width="80" height="30" fill="var(--canvas-light)" stroke="var(--border-color)" stroke-width="2"/>
-                    <text x="80" y="60" text-anchor="middle" class="svg-text-sm">TREE_RAG</text>
-                    <rect x="280" y="130" width="80" height="30" fill="var(--canvas-light)" stroke="var(--accent)" stroke-width="2"/>
-                    <text x="320" y="150" text-anchor="middle" class="svg-text-sm text-accent">VSE_RENDER</text>
-                    <rect x="40" y="130" width="80" height="30" fill="var(--canvas-light)" stroke="var(--amber)" stroke-width="2"/>
-                    <text x="80" y="150" text-anchor="middle" class="svg-text-sm">SWARM</text>
-                    <line x1="120" y1="55" x2="165" y2="85" stroke="var(--border-color)" stroke-width="2" stroke-dasharray="4"/>
-                    <line x1="235" y1="115" x2="280" y2="145" stroke="var(--accent)" stroke-width="2" stroke-dasharray="4"/>
-                    <line x1="120" y1="145" x2="165" y2="115" stroke="var(--amber)" stroke-width="2" stroke-dasharray="4"/>
+            <div class="window-content grid-bg hero-svg-container" style="padding: 1rem;">
+                <svg viewBox="0 0 300 450" class="hero-svg" style="max-height: 400px;">
+                    <!-- Pipeline Visualization -->
+                    <rect x="50" y="20" width="200" height="40" fill="var(--canvas-light)" stroke="var(--border-color)" stroke-width="2"/>
+                    <text x="150" y="45" text-anchor="middle" class="svg-text-sm">PDF / IMAGE</text>
+                    
+                    <line x1="150" y1="60" x2="150" y2="80" stroke="var(--border-color)" stroke-width="2" stroke-dasharray="4"/>
+                    
+                    <rect x="50" y="80" width="200" height="40" fill="var(--canvas-light)" stroke="var(--border-color)" stroke-width="2"/>
+                    <text x="150" y="105" text-anchor="middle" class="svg-text-sm">OCR + INGESTION</text>
+                    
+                    <line x1="150" y1="120" x2="150" y2="140" stroke="var(--border-color)" stroke-width="2" stroke-dasharray="4"/>
+                    
+                    <rect x="50" y="140" width="200" height="40" fill="var(--canvas-light)" stroke="var(--primary)" stroke-width="2"/>
+                    <text x="150" y="165" text-anchor="middle" class="svg-text-sm text-blue">LOCAL RAG</text>
+                    
+                    <line x1="150" y1="180" x2="150" y2="200" stroke="var(--border-color)" stroke-width="2" stroke-dasharray="4"/>
+                    
+                    <rect x="50" y="200" width="200" height="40" fill="var(--canvas-light)" stroke="var(--amber)" stroke-width="2"/>
+                    <text x="150" y="225" text-anchor="middle" class="svg-text-sm text-amber">NOTEBOOKLM MCP</text>
+                    
+                    <line x1="150" y1="240" x2="150" y2="260" stroke="var(--border-color)" stroke-width="2" stroke-dasharray="4"/>
+                    
+                    <rect x="50" y="260" width="200" height="40" fill="var(--canvas-light)" stroke="var(--accent)" stroke-width="2"/>
+                    <text x="150" y="285" text-anchor="middle" class="svg-text-sm text-accent">VISUAL SOLVER</text>
+                    
+                    <line x1="150" y1="300" x2="150" y2="320" stroke="var(--border-color)" stroke-width="2" stroke-dasharray="4"/>
+                    
+                    <rect x="50" y="320" width="200" height="40" fill="var(--canvas-light)" stroke="var(--success)" stroke-width="2"/>
+                    <text x="150" y="345" text-anchor="middle" class="svg-text-sm text-success">QUICK RECALL MEMORY</text>
                 </svg>
             </div>
         </div>
     </header>
 
+    <!-- Features Section -->
+    <section id="features" class="section">
+        <div class="section-header">
+            <h2>System Features</h2>
+            <p class="text-mono">Designed for heavy-STEM processing and cognitive load reduction.</p>
+        </div>
+        <div class="features-grid">
+            <div class="window feature-card">
+                <div class="feature-content">
+                    <h3 class="text-blue">Visual Intelligence</h3>
+                    <p>Plain text is a failure state. We enforce diagrammatic outputs. From Mermaid.js flows to side-by-side comparison cards, our Visual Solver ensures you see the answer, not just read it.</p>
+                </div>
+            </div>
+            <div class="window feature-card">
+                <div class="feature-content">
+                    <h3 class="text-accent">Persistent Study Memory</h3>
+                    <p>Your session never starts from zero. With our local sqlite-vec + mem0 backend, your past sessions, topics, language preferences, and Quick Recall cards accumulate over your semester.</p>
+                </div>
+            </div>
+            <div class="window feature-card">
+                <div class="feature-content">
+                    <h3 class="text-amber">Grounded Retrieval</h3>
+                    <p>No hallucinations. We parse your syllabus, PDFs, and OCR scans locally. Your queries are answered strictly based on the context you provide through the MVP Local RAG system.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visual Output Showcase -->
+    <section id="outputs" class="section">
+        <div class="section-header">
+            <h2>Visual Output Showcase</h2>
+            <p class="text-mono">What the engine actually generates.</p>
+        </div>
+        <div class="features-grid">
+            <div class="window feature-card">
+                <div class="window-header"><span class="window-title">FormulaCardGrid.tsx</span></div>
+                <div class="feature-content bg-blue-light">
+                    <h3>Formula Cards</h3>
+                    <p>Strict KaTeX-rendered mathematical logic chunks designed for quick cognitive parsing, eliminating walls of text during derivation.</p>
+                </div>
+            </div>
+            <div class="window feature-card">
+                <div class="window-header"><span class="window-title">MermaidDiagram.tsx</span></div>
+                <div class="feature-content bg-pink-light">
+                    <h3>Mermaid Flowcharts</h3>
+                    <p>Auto-generated state machines, class diagrams, and process workflows visually synthesized from your lecture notes in real-time.</p>
+                </div>
+            </div>
+            <div class="window feature-card">
+                <div class="window-header"><span class="window-title">ComparisonCard.tsx</span></div>
+                <div class="feature-content bg-amber-light">
+                    <h3>Comparison Grids</h3>
+                    <p>The definitive way to understand differentiating technical concepts. Side-by-side metric comparisons replacing lengthy paragraphs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NotebookLM MCP -->
+    <section id="notebooklm" class="section dark-bg">
+        <div class="window cta-window" style="background: var(--window-dark); color: var(--canvas-light);">
+            <div class="window-header" style="background: var(--border-color); color: white;">
+                <span class="window-title"><i data-lucide="link"></i> NotebookLM_MCP.sys</span>
+            </div>
+            <div class="window-content text-center">
+                <h2 class="text-amber">AI Grounded In Your Actual Material.</h2>
+                <p class="subtitle" style="color: var(--canvas-light);">The Ultimate Trust Signal</p>
+                <p>When local RAG isn't enough, we bridge out. The NotebookLM MCP acts as our external grounding augment. Your deep academic queries interface directly with NotebookLM’s robust document understanding, ensuring that every answer is tied strictly to your curriculum.</p>
+            </div>
+        </div>
+    </section>
+
     <!-- The Deep Documentation Hub -->
     <section id="docs" class="section doc-section">
         <div class="section-header">
-            <h2>The Knowledge Base</h2>
-            <p class="text-mono">Detailed technical specifications and core documentation.</p>
+            <h2>Operating Manuals</h2>
+            <p class="text-mono">Canonical technical documentation for autonomous agents and engineers.</p>
         </div>
 
         <div class="window doc-window">
             <div class="window-header">
-                <span class="window-title"><i data-lucide="book"></i> C:\DIAGRAMMATICS\docs_index.sys</span>
+                <span class="window-title"><i data-lucide="book"></i> C:\CANONICAL_DOCS\</span>
                 <div class="window-controls">
                     <button class="win-btn">_</button><button class="win-btn">□</button><button class="win-btn">×</button>
                 </div>
@@ -81,164 +171,143 @@
                 <!-- Sidebar -->
                 <aside class="doc-sidebar">
                     <div class="sidebar-group">
-                        <label>Architecture</label>
-                        <button class="doc-tab-btn active" data-tab="arch">The 2026 Stack</button>
-                        <button class="doc-tab-btn" data-tab="swarm">Agent Swarm</button>
-                        <button class="doc-tab-btn" data-tab="rag">Tree-RAG Memory</button>
-                        <button class="doc-tab-btn" data-tab="notes">Note Engine</button>
+                        <label>Tier 1: Core Authority</label>
+                        <button class="doc-tab-btn active" data-tab="ai_rules">AI_RULES.md</button>
+                        <button class="doc-tab-btn" data-tab="mvp_spec">MVP_SPEC.md</button>
+                        <button class="doc-tab-btn" data-tab="architecture">ARCHITECTURE.md</button>
+                        <button class="doc-tab-btn" data-tab="api_contract">API_CONTRACT.md</button>
                     </div>
                     <div class="sidebar-group">
-                        <label>Features & Integrations</label>
-                        <button class="doc-tab-btn" data-tab="vse">Visual Synthesis</button>
-                        <button class="doc-tab-btn" data-tab="gtu">GTU Hunter</button>
-                        <button class="doc-tab-btn" data-tab="notebooklm">NotebookLM MCP</button>
-                        <button class="doc-tab-btn" data-tab="export">Academic Export</button>
-                        <button class="doc-tab-btn" data-tab="mcp">Custom Plugins</button>
+                        <label>Tier 2: Integration</label>
+                        <button class="doc-tab-btn" data-tab="tech_stack">TECH_STACK.md</button>
+                        <button class="doc-tab-btn" data-tab="open_source">OPEN_SOURCE_STACK.md</button>
+                        <button class="doc-tab-btn" data-tab="design_system">DESIGN_SYSTEM.md</button>
+                    </div>
+                    <div class="sidebar-group">
+                        <label>Tier 3: Reference</label>
+                        <button class="doc-tab-btn" data-tab="roadmap">ROADMAP.md</button>
                     </div>
                 </aside>
                 
                 <!-- Content Pane -->
                 <main class="doc-content">
-                    <div id="tab-arch" class="tab-pane active">
-                        <h3>The 2026 Stack (Successor-First)</h3>
-                        <p>Diagrammatics Core eliminates legacy bloat. We favor a <strong>High-Performance Python + Next.js</strong> bridge, optimized for local inference on consumer hardware.</p>
-                        <table class="retro-table">
-                            <thead>
-                                <tr><th>Layer</th><th>Technology</th><th>Rationale</th></tr>
-                            </thead>
-                            <tbody>
-                                <tr><td>Orchestration</td><td>AgentScope</td><td>Modular multi-agent workflows.</td></tr>
-                                <tr><td>Bridge</td><td>FastAPI</td><td>Async WebSocket bridge for real-time thoughts.</td></tr>
-                                <tr><td>Frontend</td><td>Next.js 15</td><td>Premium dashboard performance.</td></tr>
-                                <tr><td>Memory</td><td>sqlite-vec</td><td>Pure C local-first vector search.</td></tr>
-                                <tr><td>Extraction</td><td>PaddleOCR</td><td>Pro-grade handwriting & STEM capture.</td></tr>
-                            </tbody>
-                        </table>
+                    <div id="tab-ai_rules" class="tab-pane active">
+                        <h3>AI_RULES.md</h3>
+                        <p>Governance root — authority hierarchy, forbidden patterns, and strict rules for AI coding agents. Read this before attempting any implementation.</p>
                     </div>
-                    <div id="tab-swarm" class="tab-pane">
-                        <h3>Agent Swarm Orchestration</h3>
-                        <p>Instead of one chatbot, we deploy a team. Each agent has its own capabilities and persona:</p>
-                        <ul class="retro-list list-good">
-                            <li><strong>Mentor Agent:</strong> Handles guidance, tone control, and study schedules.</li>
-                            <li><strong>Solver Agent:</strong> Specialized in multi-part STEM assignments and LaTeX injection.</li>
-                            <li><strong>Hunter Agent:</strong> Background autonomous scraping of past papers using Scrapling.</li>
-                        </ul>
-                        <p>Agents debate in a shared context window to ensure grounded, zero-hallucination results.</p>
+                    <div id="tab-mvp_spec" class="tab-pane">
+                        <h3>MVP_SPEC.md</h3>
+                        <p>The single source of truth for the MVP scope. Defines exactly what features, flows, and agents are included in the initial release (v1.0).</p>
                     </div>
-                    <div id="tab-rag" class="tab-pane">
-                        <h3>Tree-RAG: Hierarchical Memory</h3>
-                        <p>Flat vector search fails for academia. We index your life in a hierarchy:</p>
-                        <div class="tree-visual">
-                            <div class="tree-node">SEMESTER</div>
-                            <div class="tree-line"></div>
-                            <div class="tree-node">SUBJECT</div>
-                            <div class="tree-line"></div>
-                            <div class="tree-node">TOPIC (SESSIONS)</div>
-                        </div>
-                        <p>This allows the AI to understand that a question about "Fourier Transforms" in a DSP session should prioritize your DSP class notes over a generic calculus summary.</p>
+                    <div id="tab-architecture" class="tab-pane">
+                        <h3>ARCHITECTURE.md</h3>
+                        <p>System topology, RAG pipeline flow, and exact folder structure. Defines the boundary between the AgentScope Python Hub and the Next.js Frontend.</p>
                     </div>
-                    <div id="tab-notes" class="tab-pane">
-                        <h3>Integrated Note Saving</h3>
-                        <p>A completely local Zettelkasten note-taking system. No need for external apps like Obsidian or Notion. Your notes are saved locally, auto-tagged by the Swarm, and instantly injected into the Tree-RAG memory.</p>
-                        <ul class="retro-list list-good">
-                            <li>Bilingual OCR (English & Local Scripts).</li>
-                            <li>Press a hotkey to instantly capture screen clips into your notes.</li>
-                        </ul>
+                    <div id="tab-api_contract" class="tab-pane">
+                        <h3>API_CONTRACT.md</h3>
+                        <p>All WebSocket payload schemas, REST API endpoints, and real-time streaming protocols between the Hub and Dashboard.</p>
                     </div>
-                    <div id="tab-vse" class="tab-pane">
-                        <h3>Visual Synthesis Engine (VSE)</h3>
-                        <p>Diagrammatics agents don't just "talk"—they <strong>build</strong>. The VSE allows agents to natively generate:</p>
-                        <ul class="retro-list">
-                            <li><strong>Mermaid.js:</strong> For flowcharts and system diagrams.</li>
-                            <li><strong>tldraw:</strong> For infinite whiteboard sketches.</li>
-                            <li><strong>Plotly.js:</strong> For 3D math and scientific surfaces.</li>
-                            <li><strong>SchemDraw:</strong> Auto-generate complex electrical circuits.</li>
-                            <li><strong>Presentation Mode:</strong> Auto-compile visual outputs into ready-to-present PPT slides.</li>
-                        </ul>
+                    <div id="tab-tech_stack" class="tab-pane">
+                        <h3>TECH_STACK.md</h3>
+                        <p>Technology boundaries. FastEmbed, sqlite-vec, Next.js 15, and AgentScope integration specifics.</p>
                     </div>
-                    <div id="tab-gtu" class="tab-pane">
-                        <h3>GTU Hunter (Scrapling Sidecar)</h3>
-                        <p>A specialized background process using Python's <code>Scrapling</code> library. It automatically penetrates university portals and indexes up to 10 years of PYQs (Previous Year Questions) directly into your local database.</p>
-                        <p>The Swarm uses this indexed data to generate highly accurate Mock Exams based on historical professor patterns.</p>
+                    <div id="tab-open_source" class="tab-pane">
+                        <h3>OPEN_SOURCE_STACK.md</h3>
+                        <p>Per-library integration notes, why they were chosen, known risks, and fallback alternatives (e.g., PyMuPDF vs pdfplumber).</p>
                     </div>
-                    <div id="tab-notebooklm" class="tab-pane">
-                        <h3>NotebookLM Connect</h3>
-                        <p>Seamlessly integrate with Google's NotebookLM via MCP (Model Context Protocol). Sync your local folders directly to NotebookLM to generate highly grounded Audio Overviews and podcasts of your lectures, without manually uploading PDFs every time.</p>
+                    <div id="tab-design_system" class="tab-pane">
+                        <h3>DESIGN_SYSTEM.md</h3>
+                        <p>Design tokens, glassmorphism logic, Tailwind classes, and the cognitive-load laws (e.g., Max-4-Chunks, Generation Effect) driving component architecture.</p>
                     </div>
-                    <div id="tab-export" class="tab-pane">
-                        <h3>Pro Academic Export</h3>
-                        <p>When the assignment is solved, you need to submit it. Our export engine uses Tauri headless WebViews to render your glassmorphic UI directly into <strong>Pixel-Perfect PDFs</strong>.</p>
-                        <ul class="retro-list list-good">
-                            <li>Preserves KaTeX equations and advanced symbols.</li>
-                            <li>Outputs strict markdown for GitHub/blog posting.</li>
-                        </ul>
-                    </div>
-                    <div id="tab-mcp" class="tab-pane">
-                        <h3>Custom Plugins & Skills (Future)</h3>
-                        <p>The "Nexus Network" will introduce a community-driven Agent Marketplace. Since we rely on the open Model Context Protocol (MCP), users can write their own Python skills (e.g., "Auto-CAD Plugin", "MATLAB interface") and share them with other engineering students.</p>
+                    <div id="tab-roadmap" class="tab-pane">
+                        <h3>ROADMAP.md</h3>
+                        <p>Strict versioning boundaries separating active MVP deliverables from v1.5, v2, and future scoped features.</p>
                     </div>
                 </main>
             </div>
         </div>
     </section>
 
-    <!-- The Archive (Blog/Articles) -->
-    <section id="blog" class="section blog-section dark-bg">
+    <!-- MVP vs Future Roadmap Section -->
+    <section id="roadmap" class="section">
         <div class="section-header">
-            <h2 class="text-canvas-light">The Archive</h2>
-            <p class="text-mono text-amber">Philosophy, insights, and deep-dives into local intelligence.</p>
+            <h2>MVP vs Future Scope</h2>
+            <p class="text-mono">Strict separation of active architecture vs future research.</p>
+        </div>
+        <div class="educator-grid">
+            <div class="window">
+                <div class="window-header" style="background: var(--success); color: white;">
+                    <span class="window-title">CURRENT MVP (ACTIVE)</span>
+                </div>
+                <div class="window-content">
+                    <ul class="retro-list list-good">
+                        <li>OCR Ingestion (PyMuPDF / PaddleOCR)</li>
+                        <li>Local RAG (sqlite-vec / FastEmbed)</li>
+                        <li>NotebookLM MCP Integration</li>
+                        <li>Visual-First Solver (Mermaid / Math)</li>
+                        <li>Quick Recall Memory Cards</li>
+                        <li>Persistent Session State (mem0)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="window">
+                <div class="window-header" style="background: var(--accent); color: white;">
+                    <span class="window-title">FUTURE RESEARCH (DO NOT BUILD)</span>
+                </div>
+                <div class="window-content">
+                    <ul class="retro-list list-bad">
+                        <li>Video & Presentation Generation</li>
+                        <li>Autonomous Self-Improving Agents</li>
+                        <li>Advanced Graph RAG (LightRAG)</li>
+                        <li>Community Marketplace & Sync</li>
+                        <li>Gamification & Streaks</li>
+                        <li>Voice & Audio Processing</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Archive (Blog/Articles) -->
+    <section id="blog" class="section blog-section">
+        <div class="section-header">
+            <h2>The Archive</h2>
+            <p class="text-mono text-primary">Philosophy, insights, and deep-dives into educational computing.</p>
         </div>
 
         <div class="blog-grid">
             <article class="window blog-card">
                 <div class="window-header"><span class="window-title">Article_01.md</span></div>
                 <div class="window-content">
-                    <h3 class="text-accent">The Death of the Chatbot</h3>
-                    <p>Why single-threaded chat interfaces are failing students. We explore why <strong>Agent Swarms</strong> are the only way to handle complex engineering syllabi.</p>
+                    <h3 class="text-accent">Why Chatbots Fail Education</h3>
+                    <p>Conversational UI is fundamentally flawed for STEM retention. Discover why visual-first intelligence drastically reduces cognitive load for students.</p>
                     <button class="btn-retro">Read Article</button>
                 </div>
             </article>
             <article class="window blog-card">
                 <div class="window-header"><span class="window-title">Article_02.md</span></div>
                 <div class="window-content">
-                    <h3 class="text-blue">Privacy is Power</h3>
-                    <p>Your late-night research shouldn't train someone else's model. A deep dive into the <strong>Local-First</strong> movement and why we chose <code>sqlite-vec</code>.</p>
+                    <h3 class="text-blue">Persistent Academic Memory</h3>
+                    <p>The transition from a session-based bot to a local-first memory operating system. How sqlite-vec tracks your knowledge growth over a semester.</p>
                     <button class="btn-retro">Read Article</button>
                 </div>
             </article>
             <article class="window blog-card">
                 <div class="window-header"><span class="window-title">Article_03.md</span></div>
                 <div class="window-content">
-                    <h3 class="text-amber">Cracking GTU</h3>
-                    <p>How we used <strong>Scrapling</strong> to outsmart the 10-year university paper trail. Analyzing patterns in past papers with multi-agent logic.</p>
+                    <h3 class="text-amber">Grounded AI Learning Systems</h3>
+                    <p>Leveraging NotebookLM MCP workflows and Local RAG to build infrastructure that refuses to hallucinate academic truths.</p>
                     <button class="btn-retro">Read Article</button>
                 </div>
             </article>
         </div>
     </section>
 
-    <!-- Booking CTA Section -->
-    <section id="demo" class="section cta-section">
-        <div class="window cta-window">
-            <div class="window-header">
-                <span class="window-title"><i data-lucide="calendar"></i> C:\BOOKING\schedule_demo.exe</span>
-                <div class="window-controls">
-                    <button class="win-btn">_</button><button class="win-btn">□</button><button class="win-btn">×</button>
-                </div>
-            </div>
-            <div class="window-content paper-texture cta-content text-center">
-                <h2>Initialize Your Mainframe</h2>
-                <p class="subtitle">Book a 1-on-1 demo call to see the engine in action.</p>
-                <a href="https://forms.gle/mRfH5CpkPANwMFvM6" target="_blank" class="btn-retro btn-primary btn-massive pulse-btn">SCHEDULE DEMO →</a>
-            </div>
-        </div>
-    </section>
-
     <!-- Footer -->
     <footer class="retro-footer">
         <div class="footer-content">
-            <div><i data-lucide="cpu" class="icon-sm"></i> DIAGRAMMATICS CORE v2.5</div>
-            <div>Built for the Local-First Revolution.</div>
+            <div><i data-lucide="cpu" class="icon-sm"></i> DIAGRAMMATICS CORE MVP</div>
+            <div>Built for Visual-First Grounded Education.</div>
         </div>
     </footer>
 
